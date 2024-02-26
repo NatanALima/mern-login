@@ -1,0 +1,60 @@
+.inputContainer {
+    position: relative;
+    margin: 2em 0 3em;
+}
+
+
+.inputContainer input{
+    width: 100%;
+    display: flex;
+    font-size: 18px;
+    padding: 5px 0;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #674d9db5;
+    transition: .3s ease;
+}
+
+.inputContainer input:is(:active, :focus, :not(:placeholder-shown)) {
+    border-bottom: 2px solid var(--colorSec);
+
+}
+
+.inputContainer label {
+    position: absolute;
+    top: 15%;
+    font-size: 15px;
+    color: rgb(192, 192, 192);
+    transition: .3s ease;
+}
+
+.inputContainer input:is(:active, :focus, :not(:placeholder-shown)) ~ label {
+    color: var(--colorText);
+    top: -60%;
+    font-weight: 500;
+
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonContainer button {
+    width: 100%;
+    border: none;
+    padding: 12px 0;
+    border-radius: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: var(--colorSec);
+    color: white;
+    margin-bottom: 30px;
+    transition: .3s ease;
+}
+
+.buttonContainer button:hover {
+    padding: 12px 0;
+    background-color: var(--colorPrim);
+}
