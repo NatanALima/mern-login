@@ -1,0 +1,27 @@
+.modalContainer {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    animation: inAnim .2s linear forwards;
+    box-shadow: 8px 6px 10px 5px #0707071f;
+    z-index: 1;
+}
+
+
+@keyframes inAnim {
+    from {
+        transform: translate(-50%, 50%);
+        opacity: 0;
+
+    } to {
+        transform: translate(-50%, 0);
+        opacity: 1;
+    }
+}
+

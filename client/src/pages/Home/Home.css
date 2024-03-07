@@ -1,0 +1,49 @@
+.homeContainer {
+    width: 400px;
+    max-width: 500px;
+    background-color: rgb(255, 255, 255); 
+    padding: 10px 30px;
+    border-radius: 4px;
+
+}
+
+.homeContainer :is(h1,h3) {
+    text-align: center;
+
+}
+
+.homeContainer h3 {
+    color: var(--colorText);
+}
+
+.infoCollection {
+    margin: 20px 0;
+}
+
+.homeContainer .infoCollection p {
+    margin: 10px 0;
+}
+
+.homeContainer .btnContainer {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+
+}
+
+.homeContainer .btnContainer button {
+    border: none;
+    width: 100%;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 50px;
+    background-color: var(--colorSec);
+    color: white;
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+.homeContainer .btnContainer button:hover {
+    opacity: 0.8;
+}
+
